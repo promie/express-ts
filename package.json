@@ -1,0 +1,57 @@
+{
+  "name": "express-ts",
+  "version": "1.0.0",
+  "description": "Express TypeScript Starter Project",
+  "main": "app.ts",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production tsnd --cls src/index.ts",
+    "dev": "cross-env NODE_ENV=development tsnd --cls src/index.ts",
+    "build": "tsc",
+    "formatting": "prettier --check ./src",
+    "lint": "eslint ./src",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --unhandled-rejections=strict",
+    "test:watch": "cross-env NODE_ENV=test jest --verbose --runInBand --unhandled-rejections=strict --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promie/express-ts"
+  },
+  "type": "module",
+  "author": "Promie Yutasane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/promie/express-ts/issues"
+  },
+  "homepage": "https://github.com/promie/express-ts#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.8",
+    "@types/mongodb": "^4.0.7",
+    "@types/mongoose": "^5.11.97",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pino": "^6.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/pino": "^6.3.0",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-functional": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "http-status": "^1.5.0",
+    "jest": "^26.4.2",
+    "mongoose": "^5.13.7",
+    "pino-pretty": "^4.2.1",
+    "prettier": "^2.1.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.3.0",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
+  }
+}
